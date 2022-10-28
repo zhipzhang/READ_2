@@ -1,7 +1,12 @@
-<<<<<<< HEAD
-# Read_IACT_CORSIKA
+#INSTALL
+First tar -zxvf hessioxxx.tar.gz && cd hessioxxx && make
 
+Then set the HESS in CMakeLists to the ./hessioxxx/lib/libhessio.so
 
-=======
-# Read_IACT_CORSIKA
->>>>>>> 82ee3dfd0711e03a07ad8195f6a9397e17f79583
+mkdir build && cmake ..
+
+cmake --build .
+
+Finally mv libclass.pcm to the compiled/lib
+
+excutable will be in compiled/bin
